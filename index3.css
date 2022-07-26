@@ -1,0 +1,201 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Istok Web", sans-serif;
+font-weight: 200;
+}    
+
+body{
+background-image: url("fondo.jpg");
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: greenyellow;
+    align-items: center;
+
+
+    }
+    
+    .boton a{
+    font-size: 22px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+    align-items: center;
+    width:auto;
+    border-radius: 40px;
+    text-decoration: none; 
+    padding:5px 25px;
+    font-weight: bold;
+
+    }
+
+    .boton a:hover
+    {background:rgb(240, 3, 3);
+    transition: 0.4s;
+    }
+  
+
+
+
+.logo{
+width: 100%;
+display: flex;
+justify-content: start;
+align-items:center;
+color: white;
+margin-left:15px;
+margin-bottom: 15px;
+}
+
+.logo img{
+width: 40px;
+height: 40px;
+margin-right: 10px;
+}
+
+.form{
+background-image:url("fondo.jpg");
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 600px;
+height: 400px;
+flex-direction: column;
+margin: 50px 100px;
+border-radius: 20px;
+
+
+}
+
+
+.form label{
+color:white;
+
+}
+
+.form input{
+border-radius:9px;
+border-style: none;
+height: 22px;
+}
+
+
+
+
+button{
+    position: relative;
+    padding: 5px 15px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
+    overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button span {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 4px;
+    z-index: 1;
+  }
+  
+  button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #f6102b;
+    transition: .5s;
+  }
+  
+ button .liquid::after,
+ button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    
+  }
+  
+  button .liquid::before {
+    
+    border-radius: 45%;
+    animation: animate 5s linear infinite;
+  }
+  
+  button .liquid::after {
+    
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+  }
+  
+  button:hover .liquid{
+    top: -120px;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+
+  @media screen and  (max-width:680px){
+  
+  .form{
+    width: 400px;
+    height: 400px;
+  }
+  
+  }
+
+  @media screen and  (max-width:462px){
+  
+    .form{
+      width: 300px;
+      height: 400px;
+    }
+     
+
+    
+    .boton a{
+      margin:2px;
+      font-size: 18px;
+      }
+    }
+  
+  
+  
+  @media screen and  (max-width:336px){
+
+    .boton{
+    width: auto;
+    }
+
+  }

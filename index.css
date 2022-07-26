@@ -1,0 +1,352 @@
+*{box-sizing: border-box;
+padding: 0px;
+margin: 0px;}
+
+body
+{  background-image:url("fondo.jpg");
+    background-size: cover;
+}
+
+
+
+.menu-icon {
+    width: 40px;
+    height: 40px;    
+}
+
+.menu-icon{
+display: none;
+}
+
+#check{
+    display: none;
+
+}
+header
+{height: 80px;
+display: flex;
+justify-content:center ;
+align-items: center;}
+
+header .container
+{display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-between;
+padding: 0px 30px;
+}
+
+header img
+{width: 50px;
+height: 50px;
+margin-left:50px ;}
+
+header ul
+{color: white;
+list-style: none;
+display: flex;
+text-align: center;
+}
+
+li
+{
+padding:0px 25px;
+margin: 20px;
+font-family: 'Oswald', sans-serif;
+font-size: 25px;
+border-radius: 40px;
+width: 120px;
+text-align: center;
+}
+
+header li:hover
+{background: rgb(240, 3, 3);
+transition: 0.4s;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+
+
+.barra
+{background: #F5F5F5;
+height: 50px;
+}
+
+h1
+{font-family: 'Oswald', sans-serif;
+font-size: 20px;
+text-align: center;
+padding-top: 8px;
+}
+
+
+
+
+
+main
+{
+background: url(main+.jpg);
+background-size:cover;
+height:560px;
+padding-left: 30px;
+display: flex;
+}
+
+
+.titulos{
+text-align: center;
+}
+
+h2
+{font-size: 70px;
+font-family: 'Anton', sans-serif;
+color: white;
+padding-top: 90px;
+font-weight:unset;
+letter-spacing: 2px;
+margin-bottom: 20px;}
+
+main p
+{font-size: 25px;
+font-family: 'Anton', sans-serif;
+color: white;
+}
+
+.precio
+{padding-top: 30px;
+padding-bottom: 40px;
+letter-spacing: 1px;}
+
+
+main a
+{text-decoration: none;
+color: white;
+font-family: 'Anton', sans-serif;
+font-weight: unset ;
+letter-spacing: 1px;
+border-radius: 40px;
+padding: 10px 37px 10px 37px;
+background-color: black;
+margin-right: 10px;}
+
+
+main a:hover
+{background: rgb(240, 3, 3);
+transition: 0.4s;
+}
+
+
+
+.visual{
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+
+}
+
+.visual h3{
+color: white;
+font-size: 60px;
+font-family:'Oswald', sans-serif;
+text-align: center;
+padding: 20px;
+margin: 20px;
+}
+.imagenes{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row;
+}
+
+.imagenes img{
+width: 350px;
+height: 350px;
+margin: 30px;
+}
+    
+
+.visual img:hover
+    {width: 325px;
+    height:325px;
+    border:2px solid black;
+    transition: 0.4s;
+    }
+    
+
+.visual a
+{text-decoration: none;
+color: white;
+font-family: 'Anton', sans-serif;
+font-weight: unset ;
+font-size: 15px;
+letter-spacing: 1px;
+margin-left: auto;
+margin-right:auto;
+margin-top: 40px;
+margin-bottom: 90px;
+border-radius: 40px;
+border: 2px solid white;
+padding: 10px 37px 10px 37px;
+display: block;
+text-align: center;
+width: 150px;
+height: 50px;}
+
+.visual a:hover
+{background: red;
+transition: 0.4s;
+border: 2px solid red;}
+
+
+
+
+
+.columnas  
+{display: flex;
+width: 100%;
+padding: 10px;
+}
+
+
+
+.columna
+{color: white;
+width: 100%;
+}
+
+
+h4
+{font-family: 'Oswald', sans-serif;
+letter-spacing: 2px;
+padding-left: 5px;
+}
+
+
+.columna ul li
+{font-family: 'Oswald', sans-serif;
+list-style: none;
+color: rgb(239, 235, 235);
+font-size: 20px;
+width: 90%;
+margin: 10px 20px;
+}
+
+
+
+@media screen and  (max-width:736px){
+.columnas{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.container img{
+width: 50px;
+height: 50px;
+}
+
+
+main {
+background-size: cover;
+}
+
+#check{
+display:none;
+}
+
+
+.buscador{
+display: none;
+}
+
+
+  .checkbtn{
+    display: block;}
+    
+    .menu-icon{
+    display: block;
+   
+    top: 20px;
+    right: 20px;
+    }
+    
+   
+    .navegador ul {
+    display: block;
+    position: fixed;
+    top:85px;
+    left:-110%;
+    background: #222;
+    width: 100%;
+    height: 100%;
+    right: 0%;
+    text-align: center;
+    padding: 10px;
+    
+    }
+    
+    
+    .navegador ul li{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 8px;
+    width: 100%;
+    font-size: 30px;
+    }
+    
+    .navegador ul li:last-child{
+    background-color: none;
+    padding: 1rem;
+    
+    }
+
+    #check:checked~ul{
+     left: -0px; }
+        
+        .navegador ul li a{
+        font-size: 20px;
+        margin: 10px;}
+
+}
+
+@media screen and  (max-width:420px ){
+*{
+padding: 0%;
+margin: 0%;
+}    
+.barra{
+display: flex;
+justify-content: center;
+align-items: center;
+width:100%;
+}
+.barra h1{
+font-size: 15px;
+}
+
+header{
+width: 100%;
+}
+
+main{
+    width: auto
+}
+
+.imagenes img{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+
+.visual h3{
+font-size: 50px;
+}
+
+
+}
